@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background: #182c61;
+}
+h1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    color: white;
+    font-size: 60px;
+    font-family:monospace;
+    margin-top: 35px;
+}
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 550px;
+}
+.calculator{
+    width: 240px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.calculator span{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background:#eee;
+    font-size: 1.2em;
+    color: #333;
+    font-weight: 500;
+    cursor: pointer;
+}
+.calculator span:hover{
+    background:rgb(202, 200, 200);
+}
+.calculator .operations{
+    background:#393e46;
+    color: #fff;
+}
+.calculator .operations:hover{
+    background:black;
+}
+.calculator .clear{
+    background:#fd7272;
+    color: #fff;
+}
+.calculator .clear:hover{
+    background:#e04242;
+}
+.calculator .inputArea{
+    grid-column: span 4;
+    padding: 20px 10px;
+    outline: none;
+    border: none;
+    font-size:1.3em;
+}
+.calculator .plus{
+    grid-row: span 2;
+    height: 120px;
+    line-height: 120px;
+}
+.calculator .backspace:hover{
+    background-color:greenyellow;
+}
+.calculator .equal{
+    width: 120px;
+    grid-column: span 2;
+    background:#4b7bec;
+    font-size: 1.8em;
+}
+.calculator .equal:hover{
+    background-color:#2856c4;
+}
+
+/*History section */
+
+#history{
+    width: 240px;
+    height: 367.2px;
+    overflow-y: scroll;
+    font-size: 1.1em;
+    background:#4b7bec;
+    box-sizing: border-box;
+    padding: 10px 20px;
+}
+#history::-webkit-scrollbar{
+    width:0;
+}
+#history h3{
+    padding: 10px 0px;
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    background-color: #e04242;
+    margin-bottom: 15px;
+}
+#history p:last-child{
+    font-size: 1.3em;
+    font-weight: 500;
+    color: white;
+}
+.about{
+    text-align: center;
+}
+.about a{
+    border: 2px solid white;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+}
+.about a:hover{
+    background-color:#e04242;
+}
+
+
+/* About page css */
+
+.info{
+    color: white;
+}
+.info h2{
+    border: 3px solid white;
+    display:inline-block;
+    font-size: 40px;
+    margin-left: 40px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    font-family:'Times New Roman', Times, serif;
+}
+.info p{
+    font-size: 20px;
+    margin-left:40px;
+
+}
+.exit{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.exit a{
+    border: 2px solid white;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+}
+.exit a:hover{
+    background-color:#e04242;
+}
